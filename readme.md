@@ -1,7 +1,7 @@
 
 <h1 style='font-size: 1.6em'>Discovering Object that Can Move</h1>
 
-This is the repository for *Discovering Object that Can Mov*, published at CVPR 2022.  
+This is the repository for *Discovering Object that Can Move*, published at CVPR 2022.  
 
 Codes will be released soon after CVPR. 
 
