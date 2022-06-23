@@ -9,7 +9,7 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 
 <img src='./imgs/pipeline.png' />
 
-## Currently the training code is 
+## Full codes and dataset coming soon... Sorry for the late...
 
 ## Set up
 
