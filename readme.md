@@ -9,9 +9,9 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 
 <img src='./imgs/pipeline.png' />
 
-##Currently the training code is 
+## Currently the training code is 
 
-##Set up
+## Set up
 
 Python 3 dependencies:
 
@@ -25,21 +25,21 @@ Python 3 dependencies:
 The default training scipt takes ~15GB*4 for training
 
 
-##Running code
-###pre-processing
+## Running code
+### pre-processing
 To run the model on the TRI-PD dataset, first download PD data and annotations and unzip the tar files. Then run the commend
 
 ```python merge_pd.py --pd_dir /A/B --additional_dir /C/D``` 
 
 The full dataset will be merged to the path ```/A/B```
 
-###Train the model 
+### Train the model 
 
 ``` python trian.py``` 
 
 See ```run.sh``` for a sample training script
 
-###Evaluating the pre-trained model
+### Evaluating the pre-trained model
 
 To evaluate or infer on the test set, first download the pre-trained model (or train it with the training code), then run
 
@@ -55,7 +55,7 @@ See ```eval.sh``` and ```infer.sh``` for a sample evaluating script.
 
 
 
-##TRI-PD Dataset and pre-trained models
+## TRI-PD Dataset and pre-trained models
 pre-trained models updating soon...
 
 PD datasets:   
@@ -66,7 +66,7 @@ Additional annotations and pre-trained model:
 
 
 
-##Citation
+## Citation
 
 ```
 @inproceedings{bao2022discovering,
