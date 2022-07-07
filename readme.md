@@ -9,7 +9,7 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 
 <img src='./imgs/pipeline.png' />
 
-## Full codes and dataset coming soon... Sorry for the late...
+## Evaluation codes coming soon... 
 
 ## Set up
 
@@ -59,9 +59,9 @@ See ```eval.sh``` and ```infer.sh``` for a sample evaluating script.
 pre-trained models updating soon...
 
 PD datasets:   
-[[Raw dataset]](https://tri-ml-public.s3.amazonaws.com/datasets/tri-pd-flow/tri_pd_flow_00.tar): The full PD dataset contains RGB, semantic segmentation, instance segmentation, optical flow, depth, camera colibrations, 2D/3D bounding boxes
+[[Raw dataset]](./PD_raw_urls.txt): The full PD dataset contains RGB, semantic segmentation, instance segmentation, optical flow, depth, camera colibrations, 2D/3D bounding boxes
 
-Additional annotations and pre-trained model:   
+Additional annotations (moving object masks; dynamic object masks), test data, and pre-trained model:   
 [[Additional data]](https://cmu.box.com/s/2cf718pyuh9jhg7davq23y79kdinq4aq)
 
 
