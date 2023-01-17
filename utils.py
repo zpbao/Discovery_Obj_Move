@@ -34,7 +34,7 @@ def adjusted_rand_index(true_mask, pred_mask):
     bindex = torch.sum(b * (b - 1), dim=1)
     expected_rindex = aindex * bindex / (n_points*(n_points-1))
     max_rindex = (aindex + bindex) / 2
-    ari = (rindex - expected_rindex) / (max_rindex - expected_rindex+0.000000000001)
+    ari = (rindex - expected_rindex) / (max_rindex - expected_rindex+1e-9)
 
     _all_equal = lambda values: torch.all(torch.eq(values, values[..., :1]), dim=-1)
     both_single_cluster = torch.logical_and(_all_equal(true_group_ids), _all_equal(pred_group_ids))

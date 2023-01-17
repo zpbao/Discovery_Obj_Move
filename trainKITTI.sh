@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python trainKITTI.py \
+--data_path /data/KITTI/data \
+--model_dir ./tmp \
+--sample_dir ./samples \
+--proj_name KITTI \
+--exp_name KITTI-EST \
+--batch_size 8 \
+--learning_rate 0.0005 \
+--warmup_steps 3000 \
+--decay_steps 50000 \
+--hid_dim 64 \
+--num_slots 40 \
+--weight_mask 1.0 \
+--wandb True \
+--num_epochs 200 \

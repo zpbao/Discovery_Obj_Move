@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python trainPD.py \
+--data_path /data/pd_v2 \
+--model_dir ./tmp \
+--sample_dir ./samples \
+--proj_name PD \
+--exp_name GT \
+--batch_size 8 \
+--learning_rate 0.0005 \
+--warmup_steps 3000 \
+--decay_steps 50000 \
+--hid_dim 64 \
+--num_slots 40 \
+--weight_mask 1.0 \
+--supervision moving \
+--wandb True \
