@@ -61,7 +61,7 @@ root
       	- moving_masks
       	- ari_masks
       	- est_masks
-   	- scene_000003
+   - scene_000003
   	- ...
 ```
 
