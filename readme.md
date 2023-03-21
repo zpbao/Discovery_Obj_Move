@@ -6,7 +6,7 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 
 [[Project Page](https://zpbao.github.io/projects/CVPR22-Discovering/)]
 [[Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Bao_Discovering_Objects_That_Can_Move_CVPR_2022_paper.html)]
-[[Poster](https://zpbao.github.io/projects/CVPR22-Discovering/images/poster.pdf)]
+[[Poster](https://zpbao.github.io/projects/CVPR22-Discovering/image/poster.pdf)]
 
 <img src='./imgs/pipeline.png' />
 
@@ -46,23 +46,23 @@ The full dataset should be at the following structure:
 ```
 root 
    - scene_000001
-      	- rgb
-         	- camera_01
-            	- 000000000000000005.png
-            	- ...
-         	- camera_04
-         	- camera_05
-         	- camera_06
-         	- camera_07
-         	- camera_08
-         	- camera_09
-      	- motion_vectors_2d
-      	- back_motion_vectors_2d
-      	- moving_masks
-      	- ari_masks
-      	- est_masks
+      - rgb
+         - camera_01
+            - 000000000000000005.png
+            - ...
+         - camera_04
+         - camera_05
+         - camera_06
+         - camera_07
+         - camera_08
+         - camera_09
+      - motion_vectors_2d
+      - back_motion_vectors_2d
+      - moving_masks
+      - ari_masks
+      - est_masks
    - scene_000003
-  	- ...
+   - ...
 ```
 
 ### Train the model 
