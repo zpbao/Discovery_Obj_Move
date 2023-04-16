@@ -14,15 +14,6 @@ import random
 import cv2
 import math
 
-banned_scenes = ['scene_000100','scene_000002','scene_000008','scene_000012','scene_000018','scene_000029',
-'scene_000038','scene_000040','scene_000043','scene_000044','scene_000049','scene_000050','scene_000053','scene_000063',
-'scene_000079','scene_000090','scene_000094','scene_000100','scene_000103','scene_000106','scene_000111','scene_000112',
-'scene_000124','scene_000125','scene_000127','scene_000148','scene_000159','scene_000166','scene_000169',
-'scene_000170','scene_000171','scene_000187', 'scene_000191','scene_000200','scene_000202','scene_000217',
-'scene_000218','scene_000225','scene_000229','scene_000232','scene_000236','scene_000237','scene_000245',
-'scene_000249'
-]
-
 class PDDataset(Dataset):
     def __init__(self, split='train', root = None):
         super(PDDataset, self).__init__()
@@ -34,8 +25,6 @@ class PDDataset(Dataset):
         self.real_files = []
         self.mask_files = []
         for f in self.files:
-            if f in banned_scenes:
-                continue
             for i in [1,5,6,7,8,9]:
                 if os.path.exists(os.path.join(self.root_dir,f+'/rgb/camera_0{}'.format(i))):
                     self.real_files.append(f+'/rgb/camera_0{}'.format(i))
