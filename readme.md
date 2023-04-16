@@ -11,12 +11,17 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 <img src='./imgs/pipeline.png' />
 
 ## Update blogs
+`[April 2023]`: [[PD_full]](https://drive.google.com/drive/folders/1G2FkJpqNoO3sB0vQ7b915szFYQuTqV9W?usp=share_link)   
+1. Added depth and semantic masks.
+2. Check our new work: [Object Discovery from Motion-Guided Tokens](https://arxiv.org/abs/2303.15555); [[code]](https://github.com/zpbao/MoTok)
+
+
 `[Jan 2023]`: [[Simplified dataset and Additional data]](https://drive.google.com/drive/folders/1q5AjqhoivJb67h9MZCgUtqb4CooDrZhC?usp=sharing)  
 1. Change the download folder from box to google drive, which is easier to download.  
 2. Simplified TRI-PD (rgb, flow, and Ground-truth and estimated instance masks) dataset provided.  
 3. KITTI estimated masks and test data included.  
 4. Pre-trained models provided.  
-5. **There are some problems with the raw data links currently, the simplified version is the correct one.**
+5. ~~There are some problems with the raw data links currently, the simplified version is the correct one.~~
 
 
 ## Set up
@@ -96,13 +101,11 @@ Pre-trained models are located in the pre-trained models folder in [this](https:
 ## TRI-PD Dataset 
 
 PD datasets:   
-[[Raw dataset]](./PD_raw_urls.txt): The full PD dataset contains RGB, semantic segmentation, instance segmentation, optical flow, depth, camera colibrations, 2D/3D bounding boxes, etc. 
 
-Simplified dataset and Additional annotations (moving object masks; dynamic object masks), test data, and pre-trained model:   
+Simplified dataset, full version of the dataset, and Additional annotations (moving object masks; dynamic object masks), test data, and pre-trained model: 
 [[Additional data]](https://drive.google.com/drive/folders/1q5AjqhoivJb67h9MZCgUtqb4CooDrZhC?usp=sharing) 
 
-Raw PD dataset is connected to TRI's [Vidar](https://github.com/TRI-ML/vidar) project. Leave a message in the issues or contact `zbao@andrew.cmu.edu` for the annotations other than the simplified ones. **Currently the full dataset links are broken, please contact `zbao@andrew.cmu.edu` for potential interests on other annotations.** Will release the full set with a latest work. 
-
+Raw PD dataset (including RGB, semantic segmentation, instance segmentation, optical flow, depth, camera colibrations, 2D/3D bounding boxes, etc. ) is connected to TRI's [Vidar](https://github.com/TRI-ML/vidar) project. Leave a message in the issues or contact `zbao@andrew.cmu.edu` for the annotations other than the provided ones.
 
 
 Sample code to transfer the motion vectors to flow xy:
