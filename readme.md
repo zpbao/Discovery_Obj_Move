@@ -24,6 +24,16 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 5. ~~There are some problems with the raw data links currently, the simplified version is the correct one.~~
 
 
+To download the files in google drive from a server, please check [gdown](https://pypi.org/project/gdown/). Some sample code to download the files in the folder:
+
+```
+import gdown
+url = "https://drive.google.com/drive/folders/1q5AjqhoivJb67h9MZCgUtqb4CooDrZhC"
+
+gdown.download_folder(url, quiet = False, use_cookies = False)
+
+```
+
 ## Set up
 
 Python 3 dependencies:
