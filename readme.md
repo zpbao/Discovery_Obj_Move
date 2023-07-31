@@ -11,6 +11,9 @@ This is the repository for [*Discovering Object that Can Move*](https://arxiv.or
 <img src='./imgs/pipeline.png' />
 
 ## Update blogs
+`[July 2023]`: [[PD_bounding boxes]](https://drive.google.com/drive/folders/1QNf1sZXyhX6mSRodg9GaDxcP3p9akZPb?usp=drive_link)   
+1. Added 2D and 3D bounding boxes. The annotation format and labels are demonstrated in the readme.txt file. 
+
 `[April 2023]`: [[PD_full]](https://drive.google.com/drive/folders/1G2FkJpqNoO3sB0vQ7b915szFYQuTqV9W?usp=share_link)   
 1. Added depth and semantic masks.
 2. Check our new work: [Object Discovery from Motion-Guided Tokens](https://arxiv.org/abs/2303.15555); [[code]](https://github.com/zpbao/MoTok)
